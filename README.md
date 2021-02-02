@@ -20,7 +20,8 @@ Attention les comptes ont une limite, ne partagez votre compte MyBoatVRO.
 Le script Python:
 Il y a une commande incluse, mais d'autres peuvent être ajoutées.
 Il faut les écrire dans la forme suivante: 
-user={"@class":".AccountDetailsRequest","requestId":"63744542013080000_"+str(requestid())}\n
+user={"@class":".AccountDetailsRequest","requestId":"63744542013080000_"+str(requestid())}
+
 requestdata(user)
 
 Pour trouver des nouvelles commandes, il suffit d'intercepter le traffic de l'application Virtual Regatta
