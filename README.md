@@ -1,5 +1,7 @@
 # Bateau autonome Virtual Regatta
 
+Attention, il ne doit y avoir aucune connection en cours avec le compte utilisé!!!
+
 Le projet est en Python 3.6 et il faut installer avec Pip les modules suivants: requests, websocket
 On peut les installer avec la commande: pip3 install -r requirements.txt
 
