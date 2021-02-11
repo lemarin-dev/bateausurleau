@@ -16,7 +16,7 @@ def requestid():
     return  requestold
 
 def myboatvro(nonce):
-    response = requests.get('https://myboatvro.000webhostapp.com/update.php?apikey='+myboatapikey+"&nonce="+nonce, verify=)
+    response = requests.get('https://myboatvro.000webhostapp.com/update.php?apikey='+myboatapikey+"&nonce="+nonce, verify=sslverify)
     print(response.text)
     data=json.loads(response.text)
     if(data["error"]=="None"):
