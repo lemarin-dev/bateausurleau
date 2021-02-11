@@ -3,6 +3,7 @@ from websocket import create_connection
 import requests
 import uuid
 api_key="z307734GALvx"
+sslverify=True #Mettre False si erreur Certificate Verify
 myboatapikey="Clé API"
 username="Addresse email"
 password="Mot de passe"
@@ -15,7 +16,7 @@ def requestid():
     return  requestold
 
 def myboatvro(nonce):
-    response = requests.get('https://myboatvro.000webhostapp.com/update.php?apikey='+myboatapikey+"&nonce="+nonce, verify=False)
+    response = requests.get('https://myboatvro.000webhostapp.com/update.php?apikey='+myboatapikey+"&nonce="+nonce, verify=)
     print(response.text)
     data=json.loads(response.text)
     if(data["error"]=="None"):
